@@ -61,9 +61,11 @@ app.get("/weather", (req, res) => {
         }
 
         res.send({
-          forecast: forecasData.forecast,
+          forecast: forecasData.forecastSummary,
           location,
           address: req.query.address,
+          currentForecast: forecasData.currentForecast,
+          dailyForecast: forecasData.dailyForecast
         });
       });
     }
