@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-  <link rel="icon" href="/img/weather.png">
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  <div class="main-content">
-    {{>header}}
-    <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
-  </div>
-  {{>footer}}
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+      <img class="portrait" src="/img/nyan-nein.gif" alt="">
+      <p>This site was created bt {{name}}, it uses data from mapbox and darksky.net</p>
+    </div>
+    {{>footer}}
+  </body>
 </html>
 
